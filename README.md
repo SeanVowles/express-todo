@@ -32,7 +32,8 @@ This is a free course on [Udemy](https://www.udemy.com/course/free-create-a-node
 - [x] Add learning plan to personal wiki space
 - [x] Convert project to TypeScript [Node starter project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 - [ ] Create a production build [Node starter project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
-- [ ] Break endpoints into individual TS files
+- [x] Break endpoints into individual TS files
+- [ ] Make duplicated code generic (interface and DB connection)
 - [ ] Add a testing library and think of how an app like this would be tested
 - [ ] Attach a front end framework (preferably ReactJS) to act upon each endpoint
 
