@@ -4,7 +4,8 @@
 This is a free course on [Udemy](https://www.udemy.com/course/free-create-a-node-js-backend-app-and-host-it-on-aws/learn/lecture/24147286#overview) called Create a Node JS backend app and host it on AWS
 
 ## Completion
-**Section 1: Introduction **
+**Section 1: Introduction**
+
 - [x] Introduction and course goals
 - [x] Tech Stack
 
