@@ -29,7 +29,7 @@ This is a free course on [Udemy](https://www.udemy.com/course/free-create-a-node
 - [ ] Assigning a domain name to your project
 
 ### Additional Tasks
-- [ ] Upload repo to VC
+- [x] Upload repo to VC
 - [x] Add learning plan to personal wiki space
 - [x] Convert project to TypeScript [Node starter project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 - [ ] Create a production build [Node starter project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
