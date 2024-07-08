@@ -42,4 +42,4 @@ This is a free course on [Udemy](https://www.udemy.com/course/free-create-a-node
 ### Local development
 * npm install
 * npm run start:dev
-* localhost:3000
+* localhost:3001
