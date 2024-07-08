@@ -18,6 +18,6 @@ app.put('/todos/:id/add-label', addLabelHandler);
 app.post('/todo', addTodoHandler);
 app.delete('/todos/:id/delete', deleteTodoHandler);
 
-app.listen(3000, (): void => {
-    console.log('Application running on http://localhost:3000');
+app.listen(3001, (): void => {
+    console.log('Application running on http://localhost:3001');
 });
