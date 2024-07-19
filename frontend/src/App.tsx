@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
-interface Todo {
-    id: number;
-    name: string;
-    complete: boolean;
-};
+import { Container } from '@mui/material';
+import TodoList from './components/TodoList';
+import { Todo } from './types/TodoTypes';
 
 const App: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
@@ -20,14 +17,26 @@ const App: React.FC = () => {
             });
     }, []);
 
+    const toggleComplete = (id: number, complete: boolean) => {
+        const url = `/todos/${id}/${complete ? 'complete' : 'incomplete'}`;
+
+        axios.put(url)
+            .then(response => {
+                setTodos(prevTodos =>
+                    prevTodos.map(todo =>
+                        todo.id === id ? { ...todo, complete} : todo
+                    )
+                );
+            })
+            .catch(error => {
+                console.error('There was an error!', error)
+            });
+    };
+
     return (
-        <div>
-            <ul>
-                {todos.map(todo => (
-                    <li key={todo.id}>{todo.name} </li>
-                ))}
-            </ul>
-        </div>
+        <Container>
+            <TodoList todos={todos} toggleComplete={toggleComplete}/>
+        </Container>
     );
 };
 
