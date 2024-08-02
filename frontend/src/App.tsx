@@ -17,7 +17,7 @@ const App: React.FC = () => {
             });
     }, []);
 
-    const toggleComplete = (id: number, complete: boolean) => {
+    const toggleComplete = (id: number, complete: boolean): void  => {
         const url = `/todos/${id}/${complete ? 'complete' : 'incomplete'}`;
 
         axios.put(url)
@@ -33,9 +33,28 @@ const App: React.FC = () => {
             });
     };
 
+    const addLabel = (id: number, label: string): void => {
+        const url = `/todos/${id}/add-label`;
+
+        axios.put(url, { label })
+            .then(response => {
+                setTodos(prevTodos =>
+                    prevTodos.map(todo =>
+                        todo.id === id ? { ...todo, label } : todo
+                    )
+                );
+            })
+            .catch (error => {
+                console.error('There was an error!', error)
+            });
+    }
+
     return (
         <Container>
-            <TodoList todos={todos} toggleComplete={toggleComplete}/>
+            <TodoList todos={todos}
+                toggleComplete={toggleComplete}
+                addLabel={addLabel}
+            />
         </Container>
     );
 };
