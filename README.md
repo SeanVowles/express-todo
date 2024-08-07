@@ -43,3 +43,4 @@ This is a free course on [Udemy](https://www.udemy.com/course/free-create-a-node
 * npm install
 * npm run start:dev
 * localhost:3001
+* Frontend - npm start - localhost:3000
