@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Todo } from '../types/TodoTypes';
+import { Todo } from '../types/todoTypes';
 import TodoItem from './TodoItem';
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, TextField, Typography } from '@mui/material';
 
 interface TodoListProps {
     todos: Todo[];
