@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button, Card, CardContent, TextField, Typography } from '@mui/material';
-import { Todo } from '../types/TodoTypes';
+import { Todo } from '../types/todoTypes';
 
 interface TodoItemProps {
     todo: Todo;
